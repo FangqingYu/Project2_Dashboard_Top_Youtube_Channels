@@ -37,7 +37,7 @@ body {
  #logo { 
   /* Box-model */
   height: 60px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 5px;
 
   /* Positioning */
@@ -71,7 +71,11 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
+  color: lightgrey;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:white;
 }
 
 /* Media query for nav */
@@ -84,7 +88,7 @@ body {
     width: 100%;
 
     height: 60px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 5px;
 
     margin-left: 0;
