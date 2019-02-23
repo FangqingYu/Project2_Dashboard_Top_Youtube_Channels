@@ -31,7 +31,7 @@ body {
 
 /* ----NAV START---- */
 .navbar-custom {
-  background-color: #fff;
+  background-color: #6487C9;
 }
 
  #logo { 
@@ -50,7 +50,7 @@ body {
   color: #fff;
 
   /* Visual */
-  background: #4aaaa5; 
+  background: rgba(160, 210, 232, 0.372); 
  }
 
 /* Logo hover state */
@@ -71,13 +71,13 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
+  color: #fff;
 }
 
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #4aaaa5;
+    background-color:  rgba(160, 210, 232, 0.372); 
   }
 
   #logo {
@@ -109,7 +109,7 @@ body {
   /* Typography */
   font-size: 32px;
   font-weight: bold;
-  color: #4aaaa5;
+  color: rgb(172, 164, 164);
 }
 
 .description-content {
@@ -246,7 +246,7 @@ body {
   margin-top: 30px;
 
   /* Visual */
-  background-color: #666;
+  background-color: #6487C9;
 }
 
 .text-muted-footer {
@@ -263,7 +263,7 @@ body {
   padding-top: 3px;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: #7D7987;
 }
 
 /* ----FOOTER END---- */
