@@ -29,6 +29,8 @@ Base.prepare(db.engine, reflect=True)
 #Samples_Metadata = Base.classes.sample_metadata
 #Samples = Base.classes.samples
 
+Channel = Base.classes.channel
+
 @app.route("/")
 def index():
     """Return the homepage."""
@@ -43,7 +45,20 @@ def JSON_data():
     stmt = db.session.query(Channel).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
-    return jsonify(df)
+    return df.to_json(orient = "records")
+
+
+@app.route("/Channel/<channel>")
+def JSON_data():
+    """Return data for the specific channel."""
+
+    # Use Pandas to perform the sql query
+    stmt = db.session.query(Channel).statement
+    df = pd.read_sql_query(stmt, db.session.bind)
+
+    return df.to_json(orient = "records")
+
+
 
 if __name__ == "__main__":
     app.run()
