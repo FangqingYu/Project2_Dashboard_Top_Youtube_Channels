@@ -9,13 +9,13 @@ function buildMetadata(channel) {
         // Use d3 to select the panel with id of `#sample-metadata`
 
         // Use `.html("") to clear any existing metadata
-        sample_metadata.html("");
+        channel_metadata.html("");
         console.log(channel);
         // Use `Object.entries` to add each key and value pair to the panel
         // Hint: Inside the loop, you will need to use d3 to append new
         // tags for each key-value in the metadata.
         Object.entries(channel).forEach(function ([key, value]) {
-            var row = sample_metadata.append("p");
+            var row = channel_metadata.append("p");
             row.text(`${key}: ${value}`);
         });
         // BONUS: Build the Gauge Chart
@@ -25,20 +25,20 @@ function buildMetadata(channel) {
 
 function init() {
     // Grab a reference to the dropdown select element
-    var selector = d3.select("#selDataset");
+    var input = d3.select("#selDataset");
   
     // Use the list of sample names to populate the select options
     d3.json("/name").then((channelName) => {
-      sampleNames.forEach((channel) => {
+      channelNames.forEach((channel) => {
         input
           .append("option")
           .text(channelName)
-          .property("value", sample);
+          .property("value", channel);
       });
   
       // Use the first sample from the list to build the initial plots
       const firstSample = sampleNames[0];
-      buildCharts(firstChannel);
+    //   buildCharts(firstChannel);
       buildMetadata(firstChannel);
     });
   }

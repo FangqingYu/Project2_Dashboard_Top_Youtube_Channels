@@ -36,29 +36,28 @@ def index():
     return render_template("index.html")
 
 
-#@app.route("/names")
-#def names():
+@app.route("/names")
+def names():
 #    """Return a list of sample names."""
 
-    # Use Pandas to perform the sql query
-#    stmt = db.session.query(Samples).statement
-#    df = pd.read_sql_query(stmt, db.session.bind)
+#     Use Pandas to perform the sql query
+   stmt = db.session.query(Samples).statement
+   df = pd.read_sql_query(stmt, db.session.bind)
 
-    # Return a list of the column names (sample names)
-#    return jsonify(list(df.columns)[2:])
+    Return a list of the column names (sample names)
+   return jsonify(list(df.columns)[2:])
 
 
 @app.route("/metadata/<channel>")
 def sample_metadata(Channel):
     """Return the MetaData for a given channel."""
     sel = [
-         Channel.id,
+         Channel.name,
          Channel.Channel_Id,
          Channel.Channel_Description,
          Channel.Published_Date,
          Channel.Country,
          Channel.View_Count,
-         Channel.Comment_Count,
          Channel.Subscriber_Count,
          Channel.Video_Counts,
          Channel._Banner_Image,
@@ -80,8 +79,8 @@ for channel in results:
     return jsonify(all_channels)
 
 
-@app.route("/Channels/<Channel_Id>")
-def samples(sample):
+@app.route("/Channels/<Channel_Name>")
+def channels(channel):
     """Return `ids`, `Name`, `View_Count`, `Subscriber_Count`, `Video_Counts`, and `Channel_Id`."""
     stmt = db.session.query(Channel).statement
     df = pd.read_sql_query(stmt, db.session.bind)
