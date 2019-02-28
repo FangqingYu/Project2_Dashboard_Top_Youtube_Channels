@@ -90,18 +90,14 @@
         <div class="col-md-2">
           <div class="well">
             <h5>Search a Channel!</h5>
-            <input type="text" name="channels" list="channel_list">
-              <datalist id="search_channels">
-              <option value="pewdiepie">
-              <option value="Armada">
-            </datalist>
+            <input id="selDataset" type="text" name="channels" list="channel_list" onchange="optionChanged(this.value)">
             <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading" id="header-block">
               <h3 class="panel-title">Channel Data</h3>
             </div>
-            <div id="channel-data" class="panel-body"></div>
+            <div id="channel-metadata" class="panel-body"></div>
           </div>
         </div>
         <div class="col-md-5">
