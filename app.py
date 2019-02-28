@@ -25,11 +25,11 @@ Base = automap_base()
 # reflect the tables
 Base.prepare(db.engine, reflect=True)
 
-# Save references to each table
-#Samples_Metadata = Base.classes.sample_metadata
-#Samples = Base.classes.samples
 
 Channel = Base.classes.channel
+# Use Pandas to perform the sql query
+stmt = db.session.query(Channel).statement
+df = pd.read_sql_query(stmt, db.session.bind)
 
 @app.route("/")
 def index():
@@ -40,24 +40,27 @@ def index():
 @app.route("/data")
 def JSON_data():
     """Return JSONified data."""
-
-    # Use Pandas to perform the sql query
-    stmt = db.session.query(Channel).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
-
     return df.to_json(orient = "records")
 
 
 @app.route("/Channel/<channel>")
-def JSON_data():
+def channel_data(channel):
     """Return data for the specific channel."""
 
-    # Use Pandas to perform the sql query
-    stmt = db.session.query(Channel).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+    ch = int(channel)
+    channel_df = df.loc[df['id']== ch, :]
+    return channel_df.to_json(orient = "records")
 
-    return df.to_json(orient = "records")
 
+
+#Chris to try render channel.html with data populated
+@app.route("/Channel_Chris/<channel>")
+def channel_data(channel):
+    """Return data for the specific channel."""
+
+    ch = int(channel)    
+    channel_df = df.loc[df['id']== ch, :]
+    return channel_df.to_json(orient = "records")
 
 
 if __name__ == "__main__":
