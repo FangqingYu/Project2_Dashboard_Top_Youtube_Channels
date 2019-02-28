@@ -55,7 +55,7 @@ def channel_data(channel):
 
 #Chris to try render channel.html with data populated
 @app.route("/Channel_Chris/<channel>")
-def channel_data(channel):
+def channel_data_page(channel):
     """Return data for the specific channel."""
 
     ch = int(channel)    
