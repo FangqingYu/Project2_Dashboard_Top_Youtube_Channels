@@ -258,7 +258,7 @@ body {
   margin-top: 15px;
 
   /* Typography */
-  color: #fff;
+  color: white;
 }
 
 .two-toned-footer-color {
@@ -273,7 +273,7 @@ body {
 .jumbotron {
   margin-top: -20px;
   margin-bottom: 0px;
-  background-image: url(../../Images/Youtube1.jpg);
+  background-image: url(../Images/Youtube1.jpg);
   background-position: 0% 35%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -350,4 +350,16 @@ body {
 
 #header-block{
   background-color:red;
+}
+
+#footer-text{
+  color:white;
+}
+
+#divider{
+  color:silver;
+}
+
+#footer-text:hover{
+  color:navy;
 }
