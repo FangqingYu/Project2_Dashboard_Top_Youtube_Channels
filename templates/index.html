@@ -10,13 +10,15 @@
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="../static/css/bootstrap.min.css" media="screen">
 
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css">
-    <script src="../static/js/app.py"></script>
-
+    <!--style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!--d3-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <title>Home</title>
 </head>
+
 <body>
 
     <!-- Start of navbar -->
@@ -88,11 +90,11 @@
         </div> <!-- End of Text body-->
     </div> <!-- End of Row Body -->
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-4">
           <div class="well">
-            <h5>Search a Channel!</h5>
-            <input id="selDataset" type="text" name="channels" list="channel_list" onchange="optionChanged(this.value)">
-            <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
+            <h5>Select a Channel!</h5>
+            <!--<input id="selDataset" type="text" name="channels" list="channel_list" onchange="optionChanged(this.value)">-->
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading" id="header-block">
@@ -101,19 +103,35 @@
             <div id="channel-metadata" class="panel-body"></div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div id="pie"></div>
+        <div class="col-md-8">
+          <div class="col-md-6">
+            
+          </div>
+          <div class="row">
+              <div id="banner-image"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <div id="channel-description"></div>  
+            </div>
+            <div class="col-md-6">
+              <div id="gauge"></div>
+            </div>
+
+          </div>
+          
+          
         </div>
-        <div class="col-md-5">
+        <!-- <div class="col-md-5">
           <div id="gauge"></div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
       </div>
-    </div>
+    </div> -->
 </div> <!-- End of Container -->
 
 
@@ -138,10 +156,16 @@
     <!-- End of footer -->
 
 
-
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--javascript-->
+    <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script></script>
+    <!--plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+
 </body>
 </html>
