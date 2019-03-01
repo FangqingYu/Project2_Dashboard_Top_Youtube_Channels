@@ -30,6 +30,10 @@ body {
 /* ----DEFAULT ELEMENT STYLING END---- */
 
 /* ----NAV START---- */
+#title {
+  font-family: Georgia, Times, "Times New Roman", serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; padding-bottom:10px;  
+}
+
 .navbar-custom {
   background-color: #6487C9;
 }
