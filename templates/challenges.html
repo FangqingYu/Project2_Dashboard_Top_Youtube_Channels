@@ -68,6 +68,7 @@
     </nav>
     <!-- End of navbar -->
 <br>
+<img class="text-center" id="maze-image" src="../static/Images/maze.jpg" alt="Challenge"> 
 <div class ="container">
     <div class = "row">
         <div class="col-md-12">
@@ -75,22 +76,26 @@
         </div>
     </div>
     <div class = "row">
-        <div class="col-md-12">
-          <p class="text"> The majority of the challenge for us in this project had to do with the kind of data we could collect. <br> Our largest challenges were the following:</p>
+        <div class="col-md-12" id="challenge-text">
+          <p class="text"> The majority of the challenge for us in this project had to do with the kind of data we could collect. <br>Our largest challenges were the following:</p>
           <ul class="text">  
               <li>We did not have access to exact income.</li> 
               <ul>
                   <li> This both limited our data and also forced us to use ranges provided by Socialblade.</li>
+                  <li> Socialblade itself was also a challenge to scrape.</li>
               </ul>
+              <br>
               <li> Youtube's API only allowed us to get ~80 channels</li>
               <ul>
                   <li>Because of that we just went with an analysis of these 80 channels.</li>
               </ul>
+              <br>
               <li> We only had access to the limited data of the Official Youtube Analytics Data API</li>
               <ul>
                   <li> The other API were for owners of Youtube channels.</li>
                   <li> The Data API that we did have access to gave us data on the channels as a whole instead of any independent video. </li>
               </ul>
+              <br>
           </ul>
         </div> <!-- End of Text body-->
     </div> <!-- End of Row Body -->
