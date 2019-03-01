@@ -31,9 +31,20 @@ body {
 
 /* ----NAV START---- */
 #title {
-  font-family: Georgia, Times, "Times New Roman", serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; padding-bottom:10px;  
+  font-family: Georgia, Times, "Times New Roman", serif; 
+  font-size: 40px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+  padding-bottom:10px;  
 }
 
+#challenge-text {
+  font-size:18px;
+  font-weight:500;
+
+}
 .navbar-custom {
   background-color: #6487C9;
 }
@@ -366,4 +377,13 @@ body {
 
 #footer-text:hover{
   color:navy;
+}
+
+#maze-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width:1510px;
+  height:364px;
 }

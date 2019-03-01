@@ -46,6 +46,16 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
+@app.route("/challenges")
+def challenges():
+    """Return the homepage."""
+    return render_template("challenges.html")
+
+@app.route("/dataset")
+def dataset():
+    """Return the homepage."""
+    return render_template("data.html")
+
 
 @app.route("/data")
 def JSON_data():
