@@ -23,17 +23,17 @@ static:
 -------
 contains the css and js components:
 
-    a) css folder:
+ - css folder:
         1) bootstrap.min.css: Our website's bootstrap css
         2) style.css: our website's css
 
-    b) js folder: 
+ - js folder: 
         1) logic.js: javascript to add interactivity to pages.
 
 
 templates: 
 ----------
-contains the HTML pages:
+contains the `HTML` pages:
     1) challenges.html
     2) data.html
     3) index.html: landing page
@@ -45,16 +45,16 @@ contains the HTML pages:
 
 Flask app:
 -----------
-app.py: This is the app that hands off the data from our CSV and JSON to the website. 
+`app.py:` This is the app that hands off the data from our CSV and JSON to the website. 
 
 
 Tableau visualizations:
 ------------------------
-youtube_book.twb: This is our Tableau notebook. 
+`youtube_book.twb:` This is our Tableau notebook. 
 
 Jupyter Notebooks:
 ---------------------
-    1) YouTube_Data_Integration.ipynb
+    1) `YouTube_Data_Integration.ipynb`
 
 
 
