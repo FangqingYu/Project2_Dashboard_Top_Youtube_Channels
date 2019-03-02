@@ -18,11 +18,12 @@ data:
 
 db:
 -------
-    1) YouTube_Top_Channels.sqlite sqlite database containing the top 83 youtube channels retrieved with the YouTube API.
+    1) YouTube_Top_Channels.sqlite database containing the top 83 youtube channels retrieved with the YouTube API.
 
 static: 
 -------
-contains the css and js components
+    contains the css and js components<br>
+
     a) css folder:
         1) bootstrap.min.css: Bootstrap css
         2) style.css: local css
@@ -35,15 +36,12 @@ templates:
 ----------
 contains the HTML components
     1) challenges.html
-    2) channel.html
-    3) data.html
-    4) index.html: landing page
-    5) money.html
-    6) Subscribers.html
-    7) visualization_1.html
-    8) visualization_2.html
-    9) visualization_3.html
-    10) Who.html
+    2) data.html
+    3) index.html: landing page
+    4) money.html
+    5) visualization_1.html
+    6) visualization_2.html
+    7) visualization_3.html
 
 
 Flask app:
