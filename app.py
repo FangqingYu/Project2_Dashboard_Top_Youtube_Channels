@@ -48,6 +48,11 @@ def challenges():
     """Return the homepage."""
     return render_template("challenges.html")
 
+@app.route("/money")
+def money():
+    """Return money page"""
+    return render_template("money.html")
+
 @app.route("/dataset")
 def dataset():
     """Return the homepage."""
