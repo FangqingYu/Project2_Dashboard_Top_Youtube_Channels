@@ -34,13 +34,13 @@ contains the css and js components:
 templates: 
 ----------
 contains the `HTML` pages:
-    * `challenges.html`
-    * `data.html`
-    * `index.html:` landing page
-    * `money.html`
-    * `visualization_1.html`
-    * `visualization_2.html`
-    * `visualization_3.html`
+   * `challenges.html`
+   * `data.html`
+   * `index.html:` landing page
+   * `money.html`
+   * `visualization_1.html`
+   * `visualization_2.html`
+   * `visualization_3.html`
 
 Flask app:
 -----------
