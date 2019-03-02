@@ -28,16 +28,16 @@ contains the css and js components
 templates: 
 ----------
 contains the HTML components
-    1) challenges.html: 
-    2) channel.html:
-    3) data.html:
+    1) challenges.html
+    2) channel.html
+    3) data.html
     4) index.html: landing page
-    5) money.html:
-    6) Subscribers.html:
-    7) visualization_1.html:
-    8) visualization_2.html:
-    9) visualization_3.html:
-    10) Who.html:
+    5) money.html
+    6) Subscribers.html
+    7) visualization_1.html
+    8) visualization_2.html
+    9) visualization_3.html
+    10) Who.html
 
 
 Flask app:
@@ -58,17 +58,17 @@ youtube_book.twb
 Jupyter Notebooks:
 ---------------------
 <strong>Francis to decide which one(s) to keep:</strong>
-YouTube_ad_API exploration.ipynb
-YouTube_API_exploration.ipynb
-YouTube_Data_Integration.ipynb
+    1) YouTube_ad_API exploration.ipynb
+    2) YouTube_API_exploration.ipynb
+    3) YouTube_Data_Integration.ipynb
 
 random folder:
-Trending_Videos_WebScraping:
+    1) Trending_Videos_WebScraping:
 
 
 
 <Strong>To be deleted
 ------------------------ </Strong>
-1) PySQLite.ipynb: already checked
-2) Extract_Data_from_SQLite.ipynb: Francis double-check
+    1) PySQLite.ipynb: already checked
+    2) Extract_Data_from_SQLite.ipynb: Francis double-check
 
