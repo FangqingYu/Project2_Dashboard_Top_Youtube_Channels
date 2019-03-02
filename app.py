@@ -65,6 +65,11 @@ def viz2():
     return render_template("visualization_2.html")
 
 
+@app.route("/visualization_3")
+def viz3():
+    """Return the visualization 3"""
+    return render_template("visualization_3.html")
+
 
 
 #json data
