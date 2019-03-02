@@ -1,6 +1,13 @@
 
+App Description: <hr>
 
-#Contents of the Git Repo:<hr>
+We used the Kaggle YouTube datasets to identify the top 100 YouTube channels and then used the YouTube API to retrieve the information for these channels. The retrieved information was loaded to a SQLite database and a CSV file. The database is used by the Flask app to render the HTML pages and the CSV file is used by Tableau to generate the visualizations.
+
+
+
+<hr>
+
+Contents of the Git Repo:<hr>
 
 
 data:
