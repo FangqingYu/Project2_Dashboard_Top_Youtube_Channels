@@ -24,11 +24,11 @@ static:
 contains the css and js components:
 
  - css folder:
-        1) bootstrap.min.css: Our website's bootstrap css
-        2) style.css: our website's css
+     -`bootstrap.min.css:` Our website's bootstrap css
+     -`style.css:` our website's css
 
  - js folder: 
-        1) logic.js: javascript to add interactivity to pages.
+     -`logic.js:` javascript to add interactivity to pages.
 
 
 templates: 
