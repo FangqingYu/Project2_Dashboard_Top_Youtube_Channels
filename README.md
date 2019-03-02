@@ -53,7 +53,7 @@ Tableau visualizations:
 
 Jupyter Notebooks:
 ---------------------
-    1) `YouTube_Data_Integration.ipynb`
+   * `YouTube_Data_Integration.ipynb`
 
 
 
