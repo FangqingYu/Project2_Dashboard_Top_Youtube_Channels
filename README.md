@@ -74,8 +74,4 @@ random folder:
 
 
 
-<Strong>To be deleted
------------------------- </Strong>
-    1) PySQLite.ipynb: already checked
-    2) Extract_Data_from_SQLite.ipynb: Francis double-check
 
