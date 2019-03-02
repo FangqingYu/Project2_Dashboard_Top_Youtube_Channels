@@ -1,6 +1,6 @@
 # Top Youtube Channels #
 
-Visit our site `here`: [Heroku App](https://project2-youtube.herokuapp.com/)
+Visit our site here: `[Heroku App](https://project2-youtube.herokuapp.com/)`
 
 Our project was to discover what a top YouTube channel looks like. In order to do this, we found a top 100 list of youtube channels on Kaggle that was organized by . Through that, we took their top 100 list and then scraped socialblade for their current data.
 
