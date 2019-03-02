@@ -18,8 +18,7 @@ data:
 
 db:
 -------
-database folder 
-    1) YouTube_Top_Channels.sqlite <Strong> move to db folder? </strong> sqlite database containing the top 83 youtube channels retrieved with the YouTube API.
+    1) YouTube_Top_Channels.sqlite sqlite database containing the top 83 youtube channels retrieved with the YouTube API.
 
 static: 
 -------
@@ -64,13 +63,8 @@ youtube_book.twb
 
 Jupyter Notebooks:
 ---------------------
-<strong>Francis to decide which one(s) to keep:</strong>
-    1) YouTube_ad_API exploration.ipynb
-    2) YouTube_API_exploration.ipynb
-    3) YouTube_Data_Integration.ipynb
+    1) YouTube_Data_Integration.ipynb
 
-random folder:
-    1) Trending_Videos_WebScraping:
 
 
 
