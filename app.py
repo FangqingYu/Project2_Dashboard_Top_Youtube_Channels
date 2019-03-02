@@ -17,7 +17,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///YouTube_Top_Channels.sqlite"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/YouTube_Top_Channels.sqlite"
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
