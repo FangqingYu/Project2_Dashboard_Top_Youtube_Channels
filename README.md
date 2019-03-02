@@ -12,36 +12,35 @@ We used the Kaggle YouTube datasets to identify the top 100 YouTube channels and
 ## Contents of the Git Repo: ##
 
 ### data: ###
- - `Top83_YouTube_Channels.csv:` Channel information extracted using YouTube Data API.
- - `kaggle_data.csv:` Used this dataset to shortlist the top 100 youtube channels based on their rank.
+ * `Top83_YouTube_Channels.csv:` Channel information extracted using YouTube Data API.
+ * `kaggle_data.csv:` Used this dataset to shortlist the top 100 youtube channels based on their rank.
 
 
 ### db:
-- `YouTube_Top_Channels.sqlite:` database containing the top 83 youtube channels retrieved with the YouTube API.
+ * `YouTube_Top_Channels.sqlite:` database containing the top 83 youtube channels retrieved with the YouTube API.
 
 static: 
 -------
 contains the css and js components:
 
  css folder:
- `bootstrap.min.css:` Our website's bootstrap css
- `style.css:` our website's css
+  * `bootstrap.min.css:` Our website's bootstrap css
+  * `style.css:` our website's css
 
  js folder: 
- -`logic.js:` javascript to add interactivity to pages.
+  * `logic.js:` javascript to add interactivity to pages.
 
 
 templates: 
 ----------
 contains the `HTML` pages:
-    1) challenges.html
-    2) data.html
-    3) index.html: landing page
-    4) money.html
-    5) visualization_1.html
-    6) visualization_2.html
-    7) visualization_3.html
-
+    * `challenges.html`
+    * `data.html`
+    * `index.html:` landing page
+    * `money.html`
+    * `visualization_1.html`
+    * `visualization_2.html`
+    * `visualization_3.html`
 
 Flask app:
 -----------
