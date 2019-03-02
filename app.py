@@ -31,9 +31,6 @@ Channel = Base.classes.channel
 stmt = db.session.query(Channel).statement
 df = pd.read_sql_query(stmt, db.session.bind)
 
-print(df)
-print(f"df size: {len(df)}")
-
 
 # for ch in list(df['Name']):
 #     print(ch)
@@ -57,6 +54,20 @@ def dataset():
     return render_template("data.html")
 
 
+@app.route("/visualization_1")
+def viz1():
+    """Return the visualization 1"""
+    return render_template("visualization_1.html")
+
+@app.route("/visualization_2")
+def viz2():
+    """Return the visualization 2"""
+    return render_template("visualization_2.html")
+
+
+
+
+#json data
 @app.route("/data")
 def JSON_data():
     """Return complete JSONified dataset."""
